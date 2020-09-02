@@ -9,9 +9,9 @@ export default class ErrorRepository {
 
   translate(code) {
     if (this.errors.has(code)) {
-      return this.errors.get(code);
+      this.errors.get(code);
     } else {
       return 'Unknown error';
-    }    
+    }
   }
 }

@@ -8,10 +8,10 @@ export default class ErrorRepository {
   }
 
   translate(code) {
-    if (this.errors.has(code)) {      
-      return this.errors.get(code);
+    if (this.errors.has(code)) {
+      this.errors.get(code);
     } else {
-        return 'Unknown error';
+      return 'Unknown error';
     }
   }
 }

@@ -3,12 +3,6 @@ export default class Team {
     this.members = new Set();
   }
 
-  // add(character) {
-  //   const { size } = this.members;
-  //   this.members.add(character);
-  //   if (size === this.members.size) throw new Error('This character already exists in the team!');
-  // }
-
   add(character) {
     if (this.members.has(character)) {
       throw new Error('This character already exists in the team!');

@@ -9,5 +9,4 @@ test.each(errors)(('Checking the error code and text'),
   (code, text) => {
     const error = new ErrorRepository();
     expect(error.translate(code)).toBe(text);
-  }
-);
+  });

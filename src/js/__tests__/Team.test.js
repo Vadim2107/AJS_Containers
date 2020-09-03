@@ -15,13 +15,13 @@ test('Adding the selected character to the team', () => {
   expect(team.members.size).toBe(2);
 });
 
-test('Adding two identical characters to the team', () => {
-  const team = new Team();
-  team.add('Magician');
-  team.add('Magician');
+// test('Adding two identical characters to the team', () => {
+//   const team = new Team();
+//   team.add('Magician');
+//   team.add('Magician');
 
-  expect(team.members.size).toBe(1);
-});
+//   expect(team.members.size).not.toBe(2);
+// });
 
 test('Test error: adding two identical characters to the team', () => {
   expect(() => {

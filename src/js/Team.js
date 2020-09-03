@@ -11,10 +11,8 @@ export default class Team {
     }
   }
 
-  addAll(...character) {
-    if (!this.members.has(character)) {
-      this.members.add(character);
-    }
+  addAll(characterList) {
+    this.members = new Set([...this.members, ...characterList]);
   }
 
   toArray() {
